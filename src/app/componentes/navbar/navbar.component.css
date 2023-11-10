@@ -27,3 +27,6 @@
   .navbar-brand{
     color: white;
   }
+  a{
+    text-shadow: 0 0 30px #fff;
+  }

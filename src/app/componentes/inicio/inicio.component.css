@@ -54,9 +54,6 @@
     background-clip: padding-box;
     border-radius: 45px;
     padding: 40px;
-    img {
-      margin-bottom: 32px;
-    }
   }
   
   .bg-green-box,
@@ -99,6 +96,7 @@
   .card-title {
     font-weight: 600;
     color: white;
+    text-shadow: 0 0 30px #fff;
     letter-spacing: -0.02em;
     line-height: 40px;
     font-style: normal;
