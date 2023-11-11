@@ -2,7 +2,7 @@
     <form [formGroup]="loginForm" (ngSubmit)="loginUser()" class="form-margin">
         <div class="row">
             <div class="col-md-6 mt-4">
-                <div class="card shadow" style="width: 400px; margin: auto;">
+                <div class="card shadow" style="width: auto; margin: auto;">
                     <div class="card-title text-center">
                         <span>Login</span>
                     </div>
@@ -42,9 +42,6 @@
                         <div class="mt-4 register">No eres miembro? <a (click)="redirectToRegister()" class="btn btn-warning m-2" style="cursor: pointer;">Registrarse</a></div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <img src="assets/login-img.webp" alt="Login Image" class="login-image" width="450px" />
             </div>
         </div>
     </form>
