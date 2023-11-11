@@ -10,13 +10,17 @@ import { CarouselModule } from 'primeng/carousel';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ButtonModule } from 'primeng/button';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { ProductosComponent } from './componentes/productos/productos.component';
+import { ChatButtonComponent } from './componentes/chat-button/chat-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     InicioComponent,
-    FooterComponent
+    FooterComponent,
+    ProductosComponent,
+    ChatButtonComponent
   ],
   imports: [
     BrowserModule,

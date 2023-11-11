@@ -96,7 +96,7 @@
   .card-title {
     font-weight: 600;
     color: white;
-    text-shadow: 0 0 30px #fff;
+    text-shadow: 0 0 30px #a2b5ff;
     letter-spacing: -0.02em;
     line-height: 40px;
     font-style: normal;
@@ -107,7 +107,7 @@
   .card-description {
     font-weight: 600;
     line-height: 32px;
-    color: hsla(0, 0%, 100%, 0.5);
+    color: #f3f3f3;
     font-size: 16px;
     max-width: 470px;
   }
