@@ -1,14 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-/* Agrega estas importaciones al principio del archivo */
-
-/* Para PrimeIcons */
-@import 'primeicons/primeicons.css';
-
-/* Para PrimeFlex */
-@import 'primeflex/primeflex.css';
-
-/* Para PrimeNG */
-@import 'primeng/resources/primeng.min.css';
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Roboto:wght@500&display=swap');
 

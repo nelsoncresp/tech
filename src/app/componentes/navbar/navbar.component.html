@@ -1,23 +1,28 @@
 <nav class="navbar navbar-expand-lg custom-navbar shadow fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" [routerLink]="['/']">
-        <img src="assets/icons/wolf.png" width="54px" alt=""> <span class="m-3">SOLUTIONUL</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="assets/icons/wolf.png" width="54px" alt="">
+         <span class="m-3">SOLUTIONUL</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-labelledby="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link me-4" [routerLink]="['/']">Inicio</a>
+            <a class="nav-link me-4 mt-2" [routerLink]="['/']">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link me-4" [routerLink]="['/productos']">Producto</a>
+            <a class="nav-link me-4 mt-2" [routerLink]="['/productos']">Producto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link me-4" [routerLink]="['/skills']">Contacto</a>
+            <a class="nav-link me-4 mt-2" [routerLink]="[]">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link me-4" [routerLink]="['/contact']">Acerca de</a>
+            <a class="nav-link me-4 mt-2" [routerLink]="[]">Acerca de</a>
+          </li>
+          <li class="nav-item login-a">
+            <a class="nav-link m-6" [routerLink]="['/login']">
+              Iniciar sesión <img src="assets/icons/icons8-login-64.png" class="m-2 text-center" width="26px" ></a>
           </li>
         </ul>
       </div>

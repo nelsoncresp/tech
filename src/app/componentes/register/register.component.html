@@ -1,0 +1,79 @@
+<br>
+<br>
+<div class="container mt-6">
+    <form [formGroup]="registerForm" (ngSubmit)="submitDetails()" class="form-margin mt-8">
+      <div class="card shadow" style="width: 480px; margin: auto; height: 100%;">
+        <div class="card-title text-center">
+          <span>Registrarse</span>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="fullName">Nombre completo</label>
+            <input
+              type="text"
+              formControlName="fullName"
+              class="form-control"
+              name="fullName"
+              placeholder="Type your name"
+            />
+            <small *ngIf="fullName.invalid && (fullName.dirty || fullName.touched)">
+              <div *ngIf="fullName.errors?.['required']">Name is required.</div>
+              <div *ngIf="fullName.errors?.['pattern']">Enter a valid Name</div>
+            </small>
+          </div>
+  
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              formControlName="email"
+              class="form-control"
+              name="email"
+              placeholder="Escriba su email"
+            />
+            <small *ngIf="email.invalid && (email.dirty || email.touched)">
+              <div *ngIf="email.errors?.['required']">Email is required.</div>
+              <div *ngIf="email.errors?.['email']">Email should be valid</div>
+            </small>
+          </div>
+  
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input
+              type="password"
+              formControlName="password"
+              class="form-control"
+              name="password"
+              placeholder="Escriba su contraseña"
+            />
+            <small *ngIf="password.invalid && (password.dirty || password.touched)">
+              <div *ngIf="password.errors?.['required']">Password is required.</div>
+            </small>
+          </div>
+  
+          <div class="form-group">
+            <label for="confirmPassword">Confirmar contraseña</label>
+            <input
+              type="password"
+              formControlName="confirmPassword"
+              class="form-control"
+              name="confirmPassword"
+              placeholder="Confirm Password"
+            />
+            <small *ngIf="confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)">
+              <div *ngIf="confirmPassword.errors?.['required']">Confirm the password</div>
+            </small>
+            <small *ngIf="registerForm.errors?.['passwordMismatch'] && confirmPassword.valid && password.valid">
+              Passwords should match
+            </small>
+          </div>
+  
+          <button type="submit" class="btn btn-dark mt-3" [disabled]="registerForm.invalid">
+            <span>Register</span>
+          </button>
+          <div class="mt-2">Ya eres miembro? <a routerLink="/login"  class="btn btn-warning m-2">Iniciar sesión</a></div>
+        </div>
+      </div>
+    </form>
+  </div>
+  

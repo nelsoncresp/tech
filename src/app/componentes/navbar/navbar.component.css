@@ -4,6 +4,7 @@
     padding: 10px 15px;
     color: white;
     text-decoration: none;
+    text-shadow: 0 0 15px #fff;
   }
 
   .custom-navbar .nav-link:before {
@@ -13,7 +14,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: rgb(202, 110, 255);
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
@@ -27,6 +28,6 @@
   .navbar-brand{
     color: white;
   }
-  a{
-    text-shadow: 0 0 30px #fff;
+  .login-a {
+    text-transform: uppercase;
   }

@@ -1,0 +1,23 @@
+.container {
+    margin-top: 70px;
+}
+.card-title span {
+    color: #fff;
+    font-size: 28px;
+    text-shadow: 0 0 15px #fff;
+    font-weight: bold;
+}
+.card {
+    background-color:  #5759db;
+}
+label {
+    margin-top: 10px;
+    text-shadow: 0 0 15px #fff;
+    color: #fff;
+    font-size: 20px;
+}
+small{
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 0 0 15px #f1ebeb;
+}
