@@ -4,6 +4,7 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ProductosComponent } from './componentes/productos/productos.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { RegisterComponent } from './componentes/register/register.component';
+import { TestimoniosComponent } from './componentes/testimonios/testimonios.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,9 @@ const routes: Routes = [
     path:'login', component: LoginComponent
   },{
     path:'register', component: RegisterComponent 
+  },
+  {
+    path: 'testimonials', component: TestimoniosComponent
   }
 ];
 
