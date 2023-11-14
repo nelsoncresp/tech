@@ -15,6 +15,7 @@ import { RegisterComponent } from './componentes/register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TestimoniosComponent } from './componentes/testimonios/testimonios.component';
+import { ContactoComponent } from './componentes/contacto/contacto.component';
 
 
 
@@ -29,6 +30,7 @@ import { TestimoniosComponent } from './componentes/testimonios/testimonios.comp
     LoginComponent,
     RegisterComponent,
     TestimoniosComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
